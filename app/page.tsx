@@ -69,13 +69,13 @@ export default function Home() {
 
         <div className="grid md:grid-cols-3 gap-6">
 
-          <div className="border border-cyan-500 rounded-3xl p-6 text-center">
+          <div className="border border-green-500 rounded-3xl p-6 text-center">
             <h2 className="text-3xl font-bold text-green-400 mb-4">
               💵 USD
             </h2>
 
-            <p>BUY: 156500</p>
-            <p>SELL: 158500</p>
+            <p className="text-xl">BUY: 156500</p>
+            <p className="text-xl">SELL: 158500</p>
           </div>
 
           <div className="border border-yellow-500 rounded-3xl p-6 text-center">
@@ -83,8 +83,8 @@ export default function Home() {
               💶 EUR
             </h2>
 
-            <p>BUY: 180000</p>
-            <p>SELL: 182000</p>
+            <p className="text-xl">BUY: 180000</p>
+            <p className="text-xl">SELL: 182000</p>
           </div>
 
           <div className="border border-purple-500 rounded-3xl p-6 text-center">
@@ -92,11 +92,58 @@ export default function Home() {
               💷 GBP
             </h2>
 
-            <p>BUY: 210000</p>
-            <p>SELL: 212000</p>
+            <p className="text-xl">BUY: 210000</p>
+            <p className="text-xl">SELL: 212000</p>
           </div>
 
         </div>
+
+        <footer className="mt-16 border-t border-cyan-500 pt-8 text-center">
+
+          <h3 className="text-2xl font-bold text-cyan-400 mb-4">
+            CONTACT US
+          </h3>
+
+          <p className="text-lg mb-2">
+            📞 0750 100 3000
+          </p>
+
+          <p className="text-lg mb-2">
+            🟢 WhatsApp: 07501003000
+          </p>
+
+          <p className="text-lg mb-6">
+            📍 شەقامی ١٢٠ مەتری ناو بەنزین خانەی حاجی شێرزاد ١
+          </p>
+
+          <div className="flex justify-center gap-4 flex-wrap">
+
+            <a
+              href="tel:07501003000"
+              className="bg-cyan-500 text-black px-6 py-3 rounded-xl font-bold"
+            >
+              📞 CALL NOW
+            </a>
+
+            <a
+              href="https://wa.me/9647501003000"
+              target="_blank"
+              className="bg-green-500 text-white px-6 py-3 rounded-xl font-bold"
+            >
+              🟢 WHATSAPP
+            </a>
+
+            <a
+              href="https://maps.app.goo.gl/xkP9pux7bMExpHeq6?g_st=ic"
+              target="_blank"
+              className="bg-red-500 text-white px-6 py-3 rounded-xl font-bold"
+            >
+              📍 OPEN MAP
+            </a>
+
+          </div>
+
+        </footer>
 
       </div>
     </main>
