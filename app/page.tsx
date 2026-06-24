@@ -51,7 +51,7 @@ export default function Home() {
             <img
               src="/logo.png"
               alt="logo"
-              className="w-16 h-16 md:w-24 md:h-24"
+              className="w-16 h-16"
             />
 
             <div>
@@ -92,7 +92,7 @@ export default function Home() {
     <img
       src="/logo.png"
       alt="logo"
-      className="w-40 md:w-64 mx-auto mb-4"
+      className="w-24 mx-auto mb-4"
     />
 
     <h1 className="text-5xl md:text-8xl font-extrabold text-cyan-400">
@@ -125,150 +125,102 @@ export default function Home() {
 
   </div>
 
-</div><div className="grid md:grid-cols-3 gap-6 mb-12">
+</div><div className="grid grid-cols-3 gap-2 md:gap-6 mb-12">
 
-  <div className="border border-yellow-500 rounded-3xl p-6 bg-black/50 backdrop-blur-md">
+  <div className="border border-yellow-500 rounded-3xl p-2 md:p-6 bg-black/50 backdrop-blur-md">
 
-    <h3 className="text-4xl font-bold text-center mb-6">
+    <h3 className="text-lg md:text-4xl font-bold text-center mb-3">
       🇺🇸 USD
     </h3>
 
-    <div className="bg-green-950 rounded-2xl p-4 mb-4">
-      <p className="text-green-400 font-bold">
-        ↑ BUY
-      </p>
-
-      <p className="text-4xl font-bold">
-        0
-      </p>
+    <div className="bg-green-950 rounded-2xl p-2 md:p-4 mb-3">
+      <p className="text-green-400 font-bold">BUY</p>
+      <p className="text-xl md:text-4xl font-bold">0</p>
     </div>
 
-    <div className="bg-red-950 rounded-2xl p-4">
-      <p className="text-red-400 font-bold">
-        ↓ SELL
-      </p>
-
-      <p className="text-4xl font-bold">
-        0
-      </p>
+    <div className="bg-red-950 rounded-2xl p-2 md:p-4">
+      <p className="text-red-400 font-bold">SELL</p>
+      <p className="text-xl md:text-4xl font-bold">0</p>
     </div>
 
   </div>
 
-  <div className="border border-cyan-500 rounded-3xl p-6 bg-black/50 backdrop-blur-md">
+  <div className="border border-cyan-500 rounded-3xl p-2 md:p-6 bg-black/50 backdrop-blur-md">
 
-    <h3 className="text-4xl font-bold text-center mb-6">
+    <h3 className="text-lg md:text-4xl font-bold text-center mb-3">
       🇪🇺 EUR
     </h3>
 
-    <div className="bg-green-950 rounded-2xl p-4 mb-4">
-      <p className="text-green-400 font-bold">
-        ↑ BUY
-      </p>
-
-      <p className="text-4xl font-bold">
-        0
-      </p>
+    <div className="bg-green-950 rounded-2xl p-2 md:p-4 mb-3">
+      <p className="text-green-400 font-bold">BUY</p>
+      <p className="text-xl md:text-4xl font-bold">0</p>
     </div>
 
-    <div className="bg-red-950 rounded-2xl p-4">
-      <p className="text-red-400 font-bold">
-        ↓ SELL
-      </p>
-
-      <p className="text-4xl font-bold">
-        0
-      </p>
+    <div className="bg-red-950 rounded-2xl p-2 md:p-4">
+      <p className="text-red-400 font-bold">SELL</p>
+      <p className="text-xl md:text-4xl font-bold">0</p>
     </div>
 
   </div>
 
-  <div className="border border-purple-500 rounded-3xl p-6 bg-black/50 backdrop-blur-md">
+  <div className="border border-purple-500 rounded-3xl p-2 md:p-6 bg-black/50 backdrop-blur-md">
 
-    <h3 className="text-4xl font-bold text-center mb-6">
+    <h3 className="text-lg md:text-4xl font-bold text-center mb-3">
       🇬🇧 GBP
     </h3>
 
-    <div className="bg-green-950 rounded-2xl p-4 mb-4">
-      <p className="text-green-400 font-bold">
-        ↑ BUY
-      </p>
-
-      <p className="text-4xl font-bold">
-        0
-      </p>
+    <div className="bg-green-950 rounded-2xl p-2 md:p-4 mb-3">
+      <p className="text-green-400 font-bold">BUY</p>
+      <p className="text-xl md:text-4xl font-bold">0</p>
     </div>
 
-    <div className="bg-red-950 rounded-2xl p-4">
-      <p className="text-red-400 font-bold">
-        ↓ SELL
-      </p>
-
-      <p className="text-4xl font-bold">
-        0
-      </p>
+    <div className="bg-red-950 rounded-2xl p-2 md:p-4">
+      <p className="text-red-400 font-bold">SELL</p>
+      <p className="text-xl md:text-4xl font-bold">0</p>
     </div>
 
   </div>
 
-</div><div className="grid md:grid-cols-3 gap-6 mb-12">
+</di<div className="grid md:grid-cols-3 gap-6 mb-12">
 
   <a
     href="tel:07501003000"
-    className="border border-cyan-500 rounded-3xl p-6 text-center bg-black/50 backdrop-blur-md hover:scale-105 transition"
+    className="border border-cyan-500 rounded-3xl p-4 text-center bg-black/50 backdrop-blur-md"
   >
-    <div className="text-5xl mb-3">📞</div>
-
-    <h3 className="text-2xl font-bold">
-      CALL NOW
-    </h3>
-
-    <p className="mt-2">
-      0750 100 3000
-    </p>
+    <div className="text-4xl mb-2">📞</div>
+    <h3 className="font-bold">CALL</h3>
+    <p className="text-sm mt-1">0750 100 3000</p>
   </a>
 
   <a
     href="https://wa.me/9647501003000"
     target="_blank"
-    className="border border-green-500 rounded-3xl p-6 text-center bg-black/50 backdrop-blur-md hover:scale-105 transition"
+    className="border border-green-500 rounded-3xl p-4 text-center bg-black/50 backdrop-blur-md"
   >
-    <div className="text-5xl mb-3">🟢</div>
-
-    <h3 className="text-2xl font-bold">
-      WHATSAPP
-    </h3>
-
-    <p className="mt-2">
-      0750 100 3000
-    </p>
+    <div className="text-4xl mb-2">🟢</div>
+    <h3 className="font-bold">WHATSAPP</h3>
+    <p className="text-sm mt-1">0750 100 3000</p>
   </a>
 
   <a
     href="https://maps.app.goo.gl/xkP9pux7bMExpHeq6"
     target="_blank"
-    className="border border-purple-500 rounded-3xl p-6 text-center bg-black/50 backdrop-blur-md hover:scale-105 transition"
+    className="border border-purple-500 rounded-3xl p-4 text-center bg-black/50 backdrop-blur-md"
   >
-    <div className="text-5xl mb-3">📍</div>
-
-    <h3 className="text-2xl font-bold">
-      OPEN MAP
-    </h3>
-
-    <p className="mt-2">
-      LOCATION
-    </p>
+    <div className="text-4xl mb-2">📍</div>
+    <h3 className="font-bold">MAP</h3>
+    <p className="text-sm mt-1">OPEN</p>
   </a>
 
 </div>
 
-<div className="border border-cyan-500 rounded-3xl p-8 bg-black/50 backdrop-blur-md mb-10 text-center">
+<div className="border border-cyan-500 rounded-3xl p-6 bg-black/50 backdrop-blur-md text-center mb-10">
 
-  <h2 className="text-4xl font-bold text-cyan-400 mb-6">
+  <h2 className="text-2xl md:text-4xl font-bold text-cyan-400 mb-4">
     ADDRESS
   </h2>
 
-  <p className="text-xl leading-10">
+  <p className="text-lg leading-8">
     شەقامی ١٢٠ مەتری
     <br />
     خوار شوقەکانی جیهان ستی
@@ -278,23 +230,19 @@ export default function Home() {
 
 </div>
 
-<footer className="border-t border-cyan-500 pt-8 text-center">
+<footer className="border-t border-cyan-500 pt-6 text-center">
 
   <img
     src="/logo.png"
     alt="logo"
-    className="w-24 mx-auto mb-4"
+    className="w-16 mx-auto mb-3"
   />
 
-  <h3 className="text-2xl font-bold mb-2">
+  <h3 className="font-bold">
     AHMAD HAJI SHERZAD EXCHANGE
   </h3>
 
-  <p className="text-gray-400 mb-3">
-    Currency Exchange Services
-  </p>
-
-  <p className="text-gray-500">
+  <p className="text-gray-400 mt-2">
     © 2025 All Rights Reserved
   </p>
 
