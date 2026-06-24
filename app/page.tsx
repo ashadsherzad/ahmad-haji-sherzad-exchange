@@ -69,8 +69,7 @@ export default function Home() {
             کوردی 🌐
           </button>
 
-        </div>
-        <div className="grid md:grid-cols-3 gap-8 items-center mb-12">
+        </div><div className="grid md:grid-cols-3 gap-8 items-center mb-12">
 
   <div className="border border-cyan-500 rounded-3xl p-6 bg-black/50 backdrop-blur-md">
 
@@ -126,8 +125,7 @@ export default function Home() {
 
   </div>
 
-</div>
-<div className="grid md:grid-cols-3 gap-6 mb-12">
+</div><div className="grid md:grid-cols-3 gap-6 mb-12">
 
   <div className="border border-yellow-500 rounded-3xl p-6 bg-black/50 backdrop-blur-md">
 
@@ -213,8 +211,7 @@ export default function Home() {
 
   </div>
 
-</div>
-<div className="grid md:grid-cols-3 gap-6 mb-12">
+</div><div className="grid md:grid-cols-3 gap-6 mb-12">
 
   <a
     href="tel:07501003000"
