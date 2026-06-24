@@ -27,132 +27,134 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-black text-white p-3">
-      <div className="max-w-7xl mx-auto">
+    <main className="min-h-screen bg-black text-white">
+      <div className="max-w-7xl mx-auto p-4">
 
-        <div className="flex justify-between items-center mb-6">
+        <div className="flex justify-between items-center mb-8">
           <img
             src="/logo.png"
             alt="logo"
-            className="w-14 h-14 md:w-20 md:h-20"
+            className="w-16 h-16 md:w-24 md:h-24"
           />
 
           <button className="border border-purple-500 rounded-full px-4 py-2">
-            کوردی
+            کوردی 🌐
           </button>
         </div>
 
-        <div className="text-center mb-6">
+        <div className="text-center mb-10">
           <img
             src="/logo.png"
             alt="logo"
-            className="w-28 md:w-56 mx-auto mb-3"
+            className="w-40 md:w-64 mx-auto mb-4"
           />
 
-          <h1 className="text-3xl md:text-7xl font-bold text-cyan-400">
+          <h1 className="text-5xl md:text-7xl font-extrabold text-cyan-400">
             AHMAD
           </h1>
 
-          <h1 className="text-3xl md:text-7xl font-bold text-purple-400">
+          <h1 className="text-5xl md:text-7xl font-extrabold text-purple-400">
             HAJI SHERZAD
           </h1>
 
-          <p className="tracking-[6px] md:tracking-[12px] text-gray-300">
+          <p className="tracking-[10px] text-gray-300 mt-3">
             EXCHANGE
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 mb-6">
-          <div className="border border-cyan-500 rounded-3xl p-4 text-center">
-            <div className="text-3xl">🕒</div>
-            <h2 className="text-lg md:text-4xl font-bold text-cyan-400">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+
+          <div className="border border-cyan-500 rounded-3xl p-6 text-center">
+            <div className="text-5xl mb-2">🕒</div>
+            <h2 className="text-4xl font-bold text-cyan-400">
               {time}
             </h2>
           </div>
 
-          <div className="border border-purple-500 rounded-3xl p-4 text-center">
-            <div className="text-3xl">📅</div>
-            <h2 className="text-lg md:text-4xl font-bold text-purple-400">
+          <div className="border border-purple-500 rounded-3xl p-6 text-center">
+            <div className="text-5xl mb-2">📅</div>
+            <h2 className="text-3xl font-bold text-purple-400">
               {date}
             </h2>
           </div>
+
         </div>
 
-        <div className="grid grid-cols-3 gap-2 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
 
-          <div className="border border-green-500 rounded-3xl p-3">
-            <h3 className="text-center text-lg md:text-3xl font-bold">
+          <div className="border border-green-500 rounded-3xl p-5">
+            <h3 className="text-3xl font-bold text-center mb-4">
               🇺🇸 USD
             </h3>
 
-            <div className="bg-green-950 p-2 rounded-xl mt-2">
-              BUY
-              <div className="font-bold">0</div>
+            <div className="bg-green-950 rounded-2xl p-4 mb-3">
+              <p>BUY</p>
+              <p className="text-3xl font-bold">0</p>
             </div>
 
-            <div className="bg-red-950 p-2 rounded-xl mt-2">
-              SELL
-              <div className="font-bold">0</div>
+            <div className="bg-red-950 rounded-2xl p-4">
+              <p>SELL</p>
+              <p className="text-3xl font-bold">0</p>
             </div>
           </div>
 
-          <div className="border border-cyan-500 rounded-3xl p-3">
-            <h3 className="text-center text-lg md:text-3xl font-bold">
+          <div className="border border-cyan-500 rounded-3xl p-5">
+            <h3 className="text-3xl font-bold text-center mb-4">
               🇪🇺 EUR
             </h3>
 
-            <div className="bg-green-950 p-2 rounded-xl mt-2">
-              BUY
-              <div className="font-bold">0</div>
+            <div className="bg-green-950 rounded-2xl p-4 mb-3">
+              <p>BUY</p>
+              <p className="text-3xl font-bold">0</p>
             </div>
 
-            <div className="bg-red-950 p-2 rounded-xl mt-2">
-              SELL
-              <div className="font-bold">0</div>
+            <div className="bg-red-950 rounded-2xl p-4">
+              <p>SELL</p>
+              <p className="text-3xl font-bold">0</p>
             </div>
           </div>
 
-          <div className="border border-purple-500 rounded-3xl p-3">
-            <h3 className="text-center text-lg md:text-3xl font-bold">
+          <div className="border border-purple-500 rounded-3xl p-5">
+            <h3 className="text-3xl font-bold text-center mb-4">
               🇬🇧 GBP
             </h3>
 
-            <div className="bg-green-950 p-2 rounded-xl mt-2">
-              BUY
-              <div className="font-bold">0</div>
+            <div className="bg-green-950 rounded-2xl p-4 mb-3">
+              <p>BUY</p>
+              <p className="text-3xl font-bold">0</p>
             </div>
 
-            <div className="bg-red-950 p-2 rounded-xl mt-2">
-              SELL
-              <div className="font-bold">0</div>
+            <div className="bg-red-950 rounded-2xl p-4">
+              <p>SELL</p>
+              <p className="text-3xl font-bold">0</p>
             </div>
           </div>
 
         </div>
 
-        <div className="grid grid-cols-3 gap-2 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
 
           <a
             href="tel:07501003000"
-            className="border border-cyan-500 rounded-2xl p-3 text-center"
+            className="border border-cyan-500 rounded-3xl p-5 text-center"
           >
             📞
             <br />
-            CALL
+            0750 100 3000
           </a>
 
           <a
             href="https://wa.me/9647501003000"
-            className="border border-green-500 rounded-2xl p-3 text-center"
+            className="border border-green-500 rounded-3xl p-5 text-center"
           >
             🟢
             <br />
-            WHATSAPP
+            0750 100 3000
           </a>
 
           <a
             href="https://maps.app.goo.gl/xkP9pux7bMExpHeq6"
-            className="border border-purple-500 rounded-2xl p-3 text-center"
+            className="border border-purple-500 rounded-3xl p-5 text-center"
           >
             📍
             <br />
@@ -161,12 +163,12 @@ export default function Home() {
 
         </div>
 
-        <div className="border border-cyan-500 rounded-3xl p-5 text-center mb-6">
-          <h2 className="text-xl font-bold mb-3">
+        <div className="border border-cyan-500 rounded-3xl p-6 text-center">
+          <h2 className="text-3xl font-bold mb-4">
             ADDRESS
           </h2>
 
-          <p>
+          <p className="text-xl">
             شەقامی ١٢٠ مەتری
             <br />
             خوار شوقەکانی جیهان ستی
@@ -178,4 +180,3 @@ export default function Home() {
       </div>
     </main>
   );
-}
