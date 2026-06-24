@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -8,7 +7,7 @@ export default function Home() {
   const [date, setDate] = useState("");
 
   useEffect(() => {
-    const updateDateTime = () => {
+    const updateClock = () => {
       const now = new Date();
 
       setTime(
@@ -22,130 +21,169 @@ export default function Home() {
       setDate(now.toLocaleDateString("en-GB"));
     };
 
-    updateDateTime();
+    updateClock();
+    const timer = setInterval(updateClock, 1000);
 
-    const interval = setInterval(updateDateTime, 1000);
-
-    return () => clearInterval(interval);
+    return () => clearInterval(timer);
   }, []);
 
   return (
-    <main className="min-h-screen bg-black text-white p-4">
+    <main className="min-h-screen p-4">
       <div className="max-w-7xl mx-auto">
 
-        <div className="grid md:grid-cols-3 gap-6 items-center mb-10">
+        <div className="flex justify-between items-center mb-10">
+          <img
+            src="./logo.png"
+            alt="logo"
+            className="w-16 h-16 object-contain"
+          />
 
-          <div className="border border-cyan-400 rounded-3xl p-6 text-center">
-            <div className="text-5xl">🕒</div>
-            <div className="text-4xl font-bold mt-3">{time}</div>
-            <div className="text-cyan-400 mt-2">TIME</div>
+          <select className="glass rounded-xl px-4 py-2">
+            <option>کوردی</option>
+            <option>العربية</option>
+            <option>English</option>
+          </select>
+        </div>
+
+        <div className="text-center mb-12">
+          <img
+            src="./logo.png"
+            alt="logo"
+            className="mx-auto w-40 md:w-56 mb-4"
+          />
+
+          <h1 className="text-5xl md:text-7xl font-extrabold text-cyan-400">
+            AHMAD
+          </h1>
+
+          <h2 className="text-5xl md:text-7xl font-extrabold text-purple-400">
+            HAJI SHERZAD
+          </h2>
+
+          <p className="tracking-[10px] text-gray-300 mt-4 text-xl">
+            EXCHANGE
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6 mb-10">
+
+          <div className="glass neon-blue rounded-3xl p-6 text-center">
+            <div className="text-5xl mb-3">🕒</div>
+            <div className="text-4xl font-bold">{time}</div>
+            <p className="text-cyan-300 mt-2">TIME</p>
           </div>
 
-          <div className="text-center">
-            <Image
-              src="/logo.png"
-              alt="Logo"
-              width={160}
-              height={160}
-              className="mx-auto"
-            />
-
-            <h1 className="text-5xl md:text-7xl font-extrabold mt-4 text-cyan-400">
-              AHMAD HAJI SHERZAD
-            </h1>
-
-            <p className="tracking-[10px] text-gray-300 mt-3 text-xl">
-              EXCHANGE
-            </p>
-          </div>
-
-          <div className="border border-fuchsia-500 rounded-3xl p-6 text-center">
-            <div className="text-5xl">📅</div>
-            <div className="text-4xl font-bold mt-3">{date}</div>
-            <div className="text-fuchsia-400 mt-2">DATE</div>
+          <div className="glass neon-purple rounded-3xl p-6 text-center">
+            <div className="text-5xl mb-3">📅</div>
+            <div className="text-3xl font-bold">{date}</div>
+            <p className="text-purple-300 mt-2">DATE</p>
           </div>
 
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-6 mb-10">
 
-          <div className="border border-green-500 rounded-3xl p-6 text-center">
-            <h2 className="text-3xl font-bold text-green-400 mb-4">
-              💵 USD
-            </h2>
+          <div className="glass neon-green card-hover rounded-3xl p-6">
+            <h3 className="text-4xl font-bold text-center mb-5">
+              🇺🇸 USD
+            </h3>
 
-            <p className="text-xl">BUY: 156500</p>
-            <p className="text-xl">SELL: 158500</p>
+            <div className="bg-green-950 rounded-2xl p-4 mb-3">
+              <p>BUY</p>
+              <p className="text-3xl font-bold">0</p>
+            </div>
+
+            <div className="bg-red-950 rounded-2xl p-4">
+              <p>SELL</p>
+              <p className="text-3xl font-bold">0</p>
+            </div>
           </div>
 
-          <div className="border border-yellow-500 rounded-3xl p-6 text-center">
-            <h2 className="text-3xl font-bold text-yellow-400 mb-4">
-              💶 EUR
-            </h2>
+          <div className="glass neon-blue card-hover rounded-3xl p-6">
+            <h3 className="text-4xl font-bold text-center mb-5">
+              🇪🇺 EUR
+            </h3>
 
-            <p className="text-xl">BUY: 180000</p>
-            <p className="text-xl">SELL: 182000</p>
+            <div className="bg-green-950 rounded-2xl p-4 mb-3">
+              <p>BUY</p>
+              <p className="text-3xl font-bold">0</p>
+            </div>
+
+            <div className="bg-red-950 rounded-2xl p-4">
+              <p>SELL</p>
+              <p className="text-3xl font-bold">0</p>
+            </div>
           </div>
 
-          <div className="border border-purple-500 rounded-3xl p-6 text-center">
-            <h2 className="text-3xl font-bold text-purple-400 mb-4">
-              💷 GBP
-            </h2>
+          <div className="glass neon-purple card-hover rounded-3xl p-6">
+            <h3 className="text-4xl font-bold text-center mb-5">
+              🇬🇧 GBP
+            </h3>
 
-            <p className="text-xl">BUY: 210000</p>
-            <p className="text-xl">SELL: 212000</p>
+            <div className="bg-green-950 rounded-2xl p-4 mb-3">
+              <p>BUY</p>
+              <p className="text-3xl font-bold">0</p>
+            </div>
+
+            <div className="bg-red-950 rounded-2xl p-4">
+              <p>SELL</p>
+              <p className="text-3xl font-bold">0</p>
+            </div>
           </div>
 
         </div>
 
-        <footer className="mt-16 border-t border-cyan-500 pt-8 text-center">
+        <div className="grid md:grid-cols-3 gap-6 mb-10">
 
-          <h3 className="text-2xl font-bold text-cyan-400 mb-4">
-            CONTACT US
+          <a
+            href="tel:07501003000"
+            className="glass neon-blue rounded-3xl p-6 text-center font-bold text-xl"
+          >
+            📞 CALL
+            <br />
+            0750 100 3000
+          </a>
+
+          <a
+            href="https://wa.me/9647501003000"
+            target="_blank"
+            className="glass neon-green rounded-3xl p-6 text-center font-bold text-xl"
+          >
+            🟢 WHATSAPP
+            <br />
+            0750 100 3000
+          </a>
+
+          <a
+            href="https://maps.app.goo.gl/xkP9pux7bMExpHeq6"
+            target="_blank"
+            className="glass neon-purple rounded-3xl p-6 text-center font-bold text-xl"
+          >
+            📍 MAP
+          </a>
+
+        </div>
+
+        <div className="glass rounded-3xl p-8 text-center mb-10">
+          <h3 className="text-3xl font-bold text-cyan-400 mb-4">
+            ADDRESS
           </h3>
 
-          <p className="text-lg mb-2">
-            📞 0750 100 3000
+          <p className="text-xl">
+            شەقامی ١٢٠ مەتری
+            <br />
+            خوار شوقەکانی جیهان ستی
+            <br />
+            ناو بەنزین خانەی حاجی شێرزاد
           </p>
+        </div>
 
-          <p className="text-lg mb-2">
-            🟢 WhatsApp: 07501003000
+        <footer className="text-center py-8 border-t border-cyan-500">
+          <p className="text-gray-400">
+            © 2025 Ahmad Haji Sherzad Exchange
           </p>
-
-          <p className="text-lg mb-6">
-            📍 شەقامی ١٢٠ مەتری ناو بەنزین خانەی حاجی شێرزاد ١
-          </p>
-
-          <div className="flex justify-center gap-4 flex-wrap">
-
-            <a
-              href="tel:07501003000"
-              className="bg-cyan-500 text-black px-6 py-3 rounded-xl font-bold"
-            >
-              📞 CALL NOW
-            </a>
-
-            <a
-              href="https://wa.me/9647501003000"
-              target="_blank"
-              className="bg-green-500 text-white px-6 py-3 rounded-xl font-bold"
-            >
-              🟢 WHATSAPP
-            </a>
-
-            <a
-              href="https://maps.app.goo.gl/xkP9pux7bMExpHeq6?g_st=ic"
-              target="_blank"
-              className="bg-red-500 text-white px-6 py-3 rounded-xl font-bold"
-            >
-              📍 OPEN MAP
-            </a>
-
-          </div>
-
         </footer>
 
       </div>
     </main>
   );
-}
